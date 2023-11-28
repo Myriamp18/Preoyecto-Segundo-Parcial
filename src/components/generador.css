@@ -1,0 +1,83 @@
+.generador{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    width: 600px;
+    background-color: #fff;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+.subtitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    margin-top: 20px;
+}
+.nombre{
+    color: #3c009d;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.linea{
+    width: 150px;
+    height: 6px;
+    background: #3c009d;
+    border-radius: 9px;
+}
+.descripcion{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+}
+.descripcion {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 50px;
+    background: rgb(207, 195, 218);
+    border-radius: 6px;
+    
+}
+.descripcion input{
+    height: 40px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #282525;
+    font-size: 19px;
+    
+}
+.foto img{
+    margin: 5px 180px;
+    border-radius: 20px;
+  
+
+}
+.clic{
+    display: flex;
+    gap: 60px;
+    margin: 5px ;
+    justify-content: center;
+    
+}
+.non{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color: #fff;
+    background: #4c00b4;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 300;
+    cursor: pointer;
+}
