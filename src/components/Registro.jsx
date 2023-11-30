@@ -11,35 +11,11 @@ const Registro =() => {
 
    const navigate = useNavigate();
 
-  const [nombre, setNombre] = useState('');
-  const [telefono, setTelefono] = useState('');
-  const [email, setEmail] = useState('');
-  const [contraseña, setContraseña] = useState('')
-
-    const handleRegistro = async () => {
-        const data = {
-          nombre: nombre,
-          telefono: telefono,
-          correo :  email,
-          pass: contraseña
-        };
-      
-        try {
-          const response = await fetch('http://192.168.8.106/Generador/registro.php', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-          });
-      
-          const responseData = await response.text();
-          console.log(responseData); // Mostrar respuesta del servidor
-          navigate('/');
-        } catch (error) {
-          console.error('Error al enviar datos al servidor:', error);
-        }
-      };
+   const handleRegistro = () => {
+    // Para redirigir a otra página, usa la función navigate.
+    navigate('/');
+};
+  
 
     
     
@@ -60,17 +36,17 @@ const Registro =() => {
                 <div className="recuadro">
                         <img src={telefonos} alt=''/>
                         <input type="telefono" placeholder='Telefono'
-                        onChange={(event) => setTelefono(event.target.value)}/>
+                        />
                 </div>
                 <div className="recuadro">
                         <img src={email_icon} alt=''/>
                         <input type="electronico" placeholder='Correo Electronico'
-                        onChange={(event) => setEmail(event.target.value)}/>
+                        />
                 </div>
                 <div className="recuadro">
                         <img src={password_icon} alt=''/>
                         <input type="password" placeholder='Contraseña'
-                        onChange={(event) => setContraseña(event.target.value)}/>
+                        />
                         </div>
          </div>  
          <div className="forgot">
